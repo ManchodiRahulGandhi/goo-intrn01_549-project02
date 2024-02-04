@@ -1,0 +1,136 @@
+div,header,nav,body,footer,.div_form{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #f62222;
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    text-align:center;
+    align-items:center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.821);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 1px;
+    position: sticky;
+    top: 0;
+}
+li{
+    margin-top: 2px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+button{
+    border: none;
+    border-radius:10px;
+    background-color: black;
+    color: aliceblue;
+    padding:8px;
+}
+li:hover,button:hover,a:hover{
+    transform: scale3d(1.5,1.5,2);
+    transition: 0.2s;
+    background-color: rgba(35, 124, 239, 0.805);
+    border-radius: 9px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.help-logo{
+    width: 150px;
+    height: 200px; 
+    opacity: 0.95;   
+}
+#help>span{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    padding:5px;
+}
+#help{
+    position: fixed;
+    right: 0.5%;
+    top: 450px;
+}
+#help:hover{
+   /* width:200px ;
+    height: 250px;
+    
+    transition: 3s;
+    box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.714);*/
+    transform: scale3d(2,2,3);
+    transition: 1s;
+    position:fixed;
+    right: 5%;
+    opacity: 1;   
+}
+.mySlides{
+    width:100%; 
+    opacity: 1;
+}
+
+.card{
+    width: 40%; 
+    color: rgb(144, 141, 3);
+    text-align: center;
+    padding: 40px; 
+    
+    margin-bottom: 20px;
+}
+
+.more {
+    display: none;
+  }
+  /*from*/
+input[type="text"]{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5PX 20PX 20PX 20PX;
+    border-color: rgb(5, 165, 11);
+}
+::placeholder {
+    color: rgba(21, 156, 25, 0.8);
+    opacity: 1;
+    font-weight: bolder;
+}  
+input[type="checkbox"],input[type="radio"] {
+    accent-color: green;
+}
+input+span{
+    color: red;
+}
+  
+form{
+    box-shadow: -20px 10px 10px rgba(4, 92, 35, 0.815);
+    border-radius: 50px;
+    max-width: 400px;
+    padding:5%;  
+    margin: 10%; 
+    background-color: white;
+}
+/*foooter_of_page*/
+.footer {
+    background-color: black;
+    color: #fefefe;
+    width: 100%;
+
+  }
+  
+  .footer .content {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem;
+  }
+
+
+  

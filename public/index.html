@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goo cards servies</title>
+    <link rel="shortcut icon" href="../src/img/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="carousel();">
+    <script>
+        var myIndex = 0;
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        };
+        function displayCard() {
+                var hiddenDivs = document.querySelectorAll(".more");
+                hiddenDivs.forEach(function(hiddenDiv) {
+                    if (hiddenDiv.style.display === "none") {
+                    hiddenDiv.style.display = "block";
+                    } else {
+                    hiddenDiv.style.display = "none";
+                    }
+                });
+            }
+        
+
+        </script>
+    <div>
+        <span id="help">
+            <img src="../src/img/help-logo.webp" class="help-logo"><br>
+            <span>hover on image</span>
+        </span>
+        <header>
+            <nav>
+                <div>
+                    <ul>
+                        <li>Personal</li>
+                        <li>Corporate</li>
+                        <li>Who We Are</li>
+                        <li>Get In Touch</li>
+                        <li>Blog</li>
+                        <li>Help</li>
+                        <li>Lng</li>
+                        <li>Login</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <img src="../src/img/Goo Businesses (1).png" style="width: 10%;">
+                        <li>Credit Cards</li>
+                        <li>Benefits</li>
+                        <li>Pay</li>
+                        <li>Offers</li>
+                        <li>Rewards</li>
+                        <li>Apply</li>
+                        <input type="text" size="30" placeholder="Search Here" style="border-radius: 15px; border: none; width: 50%;">
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section >
+            <div class="">
+              <img class="mySlides" src="../src/img/d-chatbot-ela.jpg" >
+              <img class="mySlides" src="../src/img/d-contact-us.jpg" >
+              <img class="mySlides" src="../src/img/d-mailbox.jpg" >
+            </div>
+            
+            <div style="text-align: center; margin: 30px; ">
+                <div style="font-size:40px; color: brown;"><img src="../src/img/Goo Businesses (1).png" style="width: 10%;">&nbsp;&nbsp;&nbsp;Corporate Cards</div>
+                <p style="font-size:20px; color: rgb(255, 0, 0);">Our cards are designed for business requirements, Go for the ones best suited to your specific needs</p>
+            </div>
+            
+            <div style="display: flex; align-items: center; justify-content: space-around; width: 100%; flex-wrap: wrap; border: 2px black solid;">
+
+                <div class="card">
+                  <img src="../src/img/sbi-signature-corporate-card.jpg" style="width: 90%;"><br>
+                   <span>Signature Corporate</span>
+                   <p>
+                    Priority servicing Complimentary Priority Pass membership
+                    Complimentary insurance cover
+                   </p>
+                   <a href="">Learn more</a><br><br>
+                   <button>Enquire Now</button>
+                </div>
+                <div class="card ">
+                    <img src="../src/img/sbi-platinum-corporate-card.jpg" style="width: 90%;"><br>
+                    <span>platinum Corporate</span>
+                    <p>
+                     Priority servicing Complimentary Priority Pass membership
+                     Complimentary insurance cover
+                    </p>
+                    <a href="">Learn more</a><br><br>
+                    <button>Enquire Now</button>
+                 </div>
+                 <div class="card more">
+                    <img src="../src/img/sbi-platinum-corporate-card.jpg" style="width: 90%;"><br>
+                    <span>platinum Corporate</span>
+                    <p>
+                     Priority servicing Complimentary Priority Pass membership
+                     Complimentary insurance cover
+                    </p>
+                    <a href="">Learn more</a><br><br>
+                    <button>Enquire Now</button>
+                 </div>
+                 <div class="card more">
+                    <img src="../src/img/sbi-platinum-corporate-card.jpg" style="width: 90%;"><br>
+                    <span>platinum Corporate</span>
+                    <p>
+                     Priority servicing Complimentary Priority Pass membership
+                     Complimentary insurance cover
+                    </p>
+                    <a href="">Learn more</a><br><br>
+                    <button>Enquire Now</button>
+                 </div>
+                 <div class="card more">
+                    <img src="../src/img/sbi-platinum-corporate-card.jpg" style="width: 90%;"><br>
+                    <span>platinum Corporate</span>
+                    <p>
+                     Priority servicing Complimentary Priority Pass membership
+                     Complimentary insurance cover
+                    </p>
+                    <a href="">Learn more</a><br><br>
+                    <button>Enquire Now</button>
+                 </div>
+                 <div class="card more">
+                    <img src="../src/img/sbi-platinum-corporate-card.jpg" style="width: 90%;"><br>
+                    <span>platinum Corporate</span>
+                    <p>
+                     Priority servicing Complimentary Priority Pass membership
+                     Complimentary insurance cover
+                    </p>
+                    <a href="">Learn more</a><br><br>
+                    <button>Enquire Now</button>
+                 </div>
+                 <div href="#showmore" style="text-align: center; margin: 10px;">
+                    <button onclick="displayCard()" id="showmore">ShowMore</button>
+                </div> 
+            </div>
+            
+            <div class="div_form" style="background-image: url(../src/img/bg1.png); background-repeat: no-repeat; background-size: cover;"> 
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-around;  background-color: rgba(0, 0, 0, 0.358); width: 100%;">
+                    <form>
+                        <input type="text" name="" placeholder="Full Name *" required ><br>
+                        <input type="text" name="" placeholder="Email Address" title="Invalid email address"  pattern="[^@\s]+@[^@\s]+\.[^@\s]+" ><br>
+                        <div style="margin-bottom: 10px;">
+                            <input type="radio" name="card_type" value=""><span>Goo Card ELITE</span><br>
+                            <input type="radio" name="card_type" value=""><span>Goo Card PULSE</span><br>
+                            <input type="radio" name="card_type" value=""><span>Doctor's Goo Card </span><br>
+                            <input type="radio" name="card_type" value=""><span>Goo Card ELITE Advantage</span><br>
+                            <input type="radio" name="card_type" value=""><span>Goo-signature-corporate-card</span><br>
+                            <input type="radio" name="card_type" value=""><span>Goo-platinum-corporate-card</span><br>
+                        </div>
+                        <span>Select your Country with Phone Code</span><br>
+                        <input type="text" name="" placeholder="Phone Number *" required ><br>
+                        <input  type="text"name="" placeholder="Whatsapp Number"><br>
+                        <input type="checkbox" id="checkbox"><span>I authorize SBICPSL & its representatives to call me or SMS me with reference to my Credit Card application. I have read, understood and consented to the declaration as provided.</span><br>
+                        <button type="submit">Apply Now</button>
+                        <br>
+                    </form>
+                    
+                </div>           
+            </div>
+        </section>
+  
+         <footer>
+            <div class="footer">
+                
+                <div class="content">
+                    <div class="services">
+                        <h4>Services</h4>
+                        <p><a href="#">App development</a></p>
+                        <p><a href="#">Web development</a></p>
+                        <p><a href="#">DevOps</a></p>
+                        <p><a href="#">Web designing</a></p>
+                    </div>
+                    <div class="social-media">
+                        <h4>Social</h4>
+                        <p>
+                            <a href="#">
+                                <i class=""></i> Linkedin
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#">
+                                <i class=""></i> Twitter
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://github.com/ManchodiRahulGandhi">
+                                <i class=""></i> Github
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.facebook.com/">
+                                <i class=""></i> Facebook
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com">
+                                <i class=""></i> Instagram
+                            </a>
+                        </p>
+                    </div>
+                    <div class="links">
+                        <h4>Quick links</h4>
+                        <p><a href="#">Home</a></p>
+                        <p><a href="#">About</a></p>
+                        <p><a href="#">Blogs</a></p>
+                        <p><a href="#">Contact</a></p>
+                    </div>
+                    <div class="details">
+                        <h4 class="address">Address</h4>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur <br />
+                        adipisicing elit. Cupiditate, qui!
+                        </p>
+                        <h4 class="mobile">Mobile</h4>
+                        <p><a href="#">+91-6301152007</a></p>
+                        <h4 class="tel://6301152007">Email</h4>
+                        <p><a href="mailto:rahulmanchodi461@gmail.com">rahulmanchodi461@gmail.com</a></p>
+                    </div>
+                </div>
+          </div>
+         </footer>       
+</body>
+</html>
